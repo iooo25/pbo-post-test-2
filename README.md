@@ -33,16 +33,31 @@
   <li>Class Main</li>
   <ol>
     <li>Package dan Imports:</li>
+    <p>Program ini menggunakan beberapa paket Java untuk mengatur dan mengimpor kelas-kelas yang diperlukan, yaitu (baju dan celana dari com.child, dan pakaian dari com.parent, dan juga ArrayList dan Scanner dari paket java.util.)</p>
     <li>Kelas Utama (Main):</li>
+    <p>Kelas ini merupakan titik masuk program. Di dalamnya terdapat metode main yang akan dieksekusi pertama kali saat program dijalankan.</p>
     <li>Variabel dan Objek Statis:</li>
+    <p></p>
     <li>Menu dan Switch Statement:</li>
+    <p>Program ini memiliki variabel dan objek yang bersifat statis, artinya mereka terkait dengan kelas itu sendiri dan tidak bergantung pada objek spesifik dari kelas tersebut.</p>
     <li>Method nambahData(String choice):</li>
+    <p>Metode ini pertama-tama memeriksa apakah arrayPakaian kosong atau tidak. Jika kosong, maka pengguna diminta untuk memasukkan ID dan detail pakaian. Jika tidak kosong, maka metode akan memeriksa apakah ID yang dimasukkan pengguna sudah ada di dalam koleksi atau tidak. Jika sudah ada, maka metode akan memberikan pesan bahwa ID tersebut sudah ada.
+Jika ID belum ada di dalam koleksi, maka pengguna diminta untuk memasukkan detail pakaian dan pakaian baru akan ditambahkan ke dalam koleksi.</p>
     <li>Method menampilkanDataPakaian():</li>
+    <p>Metode ini pertama-tama memeriksa apakah arrayPakaian kosong atau tidak. Jika kosong, maka akan diberikan pesan bahwa data pakaian masih kosong. Jika tidak kosong, maka metode akan melakukan iterasi melalui setiap objek pakaian dalam arrayPakaian dan memanggil metode showPakaian() untuk menampilkan detail pakaian.</p>
     <li>Method mengubahDataPakaian(String choice):</li>
+    <p>Metode ini pertama-tama memeriksa apakah arrayPakaian kosong atau tidak. Jika kosong, maka akan diberikan pesan bahwa data pakaian masih kosong. Jika tidak kosong, maka metode akan meminta pengguna untuk memasukkan ID dari pakaian yang ingin diubah.
+Setelah ID dimasukkan, metode akan melakukan iterasi melalui setiap objek pakaian dalam arrayPakaian dan memeriksa apakah objek tersebut adalah "Baju" atau "Celana". Jika objek adalah "Baju" dan memiliki ID yang sesuai, maka pengguna diminta untuk memasukkan detail baru untuk baju tersebut. Hal yang sama berlaku jika objek adalah "Celana".
+Setelah detail baru dimasukkan, pakaian akan diperbarui dengan nilai-nilai baru.</p>
     <li>Method mengapusDataPakaian():</li>
+    <p>Metode ini pertama-tama memeriksa apakah arrayPakaian kosong atau tidak. Jika kosong, maka akan diberikan pesan bahwa data pakaian masih kosong. Jika tidak kosong, maka metode akan meminta pengguna untuk memasukkan ID dari pakaian yang ingin dihapus.
+Setelah ID dimasukkan, metode akan melakukan iterasi melalui setiap objek pakaian dalam arrayPakaian dan memeriksa apakah objek memiliki ID yang sesuai. Jika ditemukan pakaian dengan ID yang sesuai, maka pakaian tersebut akan dihapus dari koleksi.</p>
     <li>Penanganan Eksepsi:</li>
+    <p>Program menggunakan mekanisme penanganan eksepsi untuk mengatasi situasi-situasi di mana input pengguna tidak sesuai dengan yang diharapkan. Ini membantu memastikan program tetap berjalan dengan benar meskipun ada kesalahan input.</p>
     <li>Penjelasan Umum:</li>
+    <p>Program ini menyediakan antarmuka konsol sederhana untuk mengelola koleksi pakaian. Pengguna dapat menambahkan, menampilkan, mengubah, atau menghapus item pakaian dari koleksi.</p>
     <li>Keluar dari Program:</li>
+    <p>Jika pengguna memilih opsi untuk keluar (biasanya opsi dengan nomor 5), program akan menutup objek Scanner dan keluar dari program.</p>
   </ol>
   <li>Class Pakaian</li>
   <li>Class baju</li>
