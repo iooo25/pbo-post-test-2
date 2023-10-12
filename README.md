@@ -37,9 +37,9 @@
     <li>Kelas Utama (Main):</li>
     <p>Kelas ini merupakan titik masuk program. Di dalamnya terdapat metode main yang akan dieksekusi pertama kali saat program dijalankan.</p>
     <li>Variabel dan Objek Statis:</li>
-    <p></p>
-    <li>Menu dan Switch Statement:</li>
     <p>Program ini memiliki variabel dan objek yang bersifat statis, artinya mereka terkait dengan kelas itu sendiri dan tidak bergantung pada objek spesifik dari kelas tersebut.</p>
+    <li>Menu dan Switch Statement:</li>
+    <p>Program ini memiliki menu yang memberikan pilihan kepada pengguna. Setelah pengguna memilih, program menggunakan struktur kontrol switch untuk menentukan tindakan selanjutnya berdasarkan pilihan tersebut.</p>
     <li>Method nambahData(String choice):</li>
     <p>Metode ini pertama-tama memeriksa apakah arrayPakaian kosong atau tidak. Jika kosong, maka pengguna diminta untuk memasukkan ID dan detail pakaian. Jika tidak kosong, maka metode akan memeriksa apakah ID yang dimasukkan pengguna sudah ada di dalam koleksi atau tidak. Jika sudah ada, maka metode akan memberikan pesan bahwa ID tersebut sudah ada.
 Jika ID belum ada di dalam koleksi, maka pengguna diminta untuk memasukkan detail pakaian dan pakaian baru akan ditambahkan ke dalam koleksi.</p>
@@ -60,15 +60,67 @@ Setelah ID dimasukkan, metode akan melakukan iterasi melalui setiap objek pakaia
     <p>Jika pengguna memilih opsi untuk keluar (biasanya opsi dengan nomor 5), program akan menutup objek Scanner dan keluar dari program.</p>
   </ol>
   <li>Class Pakaian</li>
+  <ol>
+    <li>deklarasi atribut</li>
+    <ul>
+      <li>String merk: Variabel yang menyimpan informasi tentang merk pakaian.</li>
+      <li>String warna: Variabel yang menyimpan informasi tentang warna pakaian.</li>
+      <li>String jenis: Variabel yang menyimpan informasi tentang jenis pakaian (misalnya, "Baju" atau "Celana").</li>
+      <li>String harga: Variabel yang menyimpan informasi tentang harga pakaian.</li>
+      <li>int ID: Variabel yang menyimpan identifikasi unik untuk setiap pakaian.</li>
+    </ul>
+    <li>contructor</li>
+    <ul>
+      <li>Kelas pakaian memiliki konstruktor yang mengambil lima parameter (nama, warna, jenis, harga, id) untuk menginisialisasi atribut-atribut dari pakaian.</li>
+    </ul>
+    <li>getter and setter</li>
+    <ul>
+      <li>Metode getMerk(): Mengembalikan merk dari pakaian.</li>
+      <li>Metode setMerk(String nama): Mengatur merk pakaian dengan nilai baru.</li>
+      <li>Metode getHarga(): Mengembalikan harga dari pakaian</li>
+      <li>Metode setHarga(String harga): Mengatur harga pakaian dengan nilai baru</li>
+      <li>Metode getWarna(): Mengembalikan warna dari pakaian</li>
+      <li>Metode setWarna(String warna): Mengatur warna pakaian dengan nilai baru</li>
+      <li>Metode getJenis(): Mengembalikan jenis dari pakaian</li>
+      <li>Metode setJenis(String jenis): Mengatur jenis pakaian dengan nilai baru</li>
+      <li>Metode getID(): Mengembalikan ID dari pakaian</li>
+    </ul>
+    <li>abstract Method</li>
+    <ul>
+      <li>Metode showPakaian(): Ini adalah metode abstrak yang akan diimplementasikan di kelas-kelas turunannya. Metode ini bertanggung jawab untuk menampilkan informasi tentang pakaian.</li>
+    </ul>
+  </ol>
   <li>Class baju</li>
+  <p>kelas baju adalah kelas konkret yang mewakili jenis pakaian "Baju". Ia mewarisi struktur dan sifat dasar dari kelas abstrak pakaian, namun memiliki implementasi khusus untuk metode showPakaian() yang sesuai dengan karakteristik pakaian jenis "Baju".</p>
   <li>Class celana</li>
+  <p>kelas celana adalah kelas konkret yang mewakili jenis pakaian "Celana". Ia mewarisi struktur dan sifat dasar dari kelas abstrak pakaian, namun memiliki implementasi khusus untuk metode showPakaian() yang sesuai dengan karakteristik pakaian jenis "Celana".</p>
 </ol>
 
 <h2>C. Penjelasan Output</h2>
 <ol>
   <li>create</li>
+
+  ![image](https://github.com/iooo25/pbo-post-test-2/assets/128172248/38cf5b82-31c0-45f3-b98f-075ae1553a52)
+  <p>Bagian ini memungkinkan pengguna untuk menambahkan pakaian ke dalam daftar. Pengguna diminta untuk memilih jenis pakaian (baju atau celana) dan kemudian memasukkan informasi seperti ID, merk, warna, jenis, dan harga.</p>
+
   <li>read</li>
+
+  ![image](https://github.com/iooo25/pbo-post-test-2/assets/128172248/df914972-e6ed-49ea-98fa-ac30144098a5)
+  <p>Bagian ini memungkinkan pengguna untuk menampilkan daftar pakaian yang telah ditambahkan. Jika daftar pakaian masih kosong, pesan akan ditampilkan.</p>
+
   <li>update</li>
+
+  ![image](https://github.com/iooo25/pbo-post-test-2/assets/128172248/cb0e3753-e18e-45ec-9ccc-df5f6007baab)
+  <p>Bagian ini memungkinkan pengguna untuk mengubah informasi pakaian yang sudah ada di dalam daftar. Pengguna diminta untuk memasukkan ID pakaian yang ingin diubah, dan kemudian dapat memperbarui merk, warna, jenis, dan harga.</p>
+
   <li>delete</li>
+
+  ![image](https://github.com/iooo25/pbo-post-test-2/assets/128172248/155a8da1-5316-416e-b078-eb08c22de87f)
+  <p>Bagian ini memungkinkan pengguna untuk menghapus pakaian dari daftar berdasarkan ID pakaian yang dimasukkan.</p>
+
   <li>EXIT</li>
+
+  ![image](https://github.com/iooo25/pbo-post-test-2/assets/128172248/17277e42-883a-48f0-a25d-07ee60b93e01)
+  <p>jika user menginputkan 5, maka program akan selesai</p>
+
 </ol>
