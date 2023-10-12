@@ -20,14 +20,33 @@
   ![image](https://github.com/iooo25/pbo-post-test-2/assets/128172248/a6577e97-13df-4ab3-bb8d-f4011be31686)
   ![image](https://github.com/iooo25/pbo-post-test-2/assets/128172248/f5eb9ccd-fa69-492d-8f00-a66f314f765c)
   <li>Class baju</li>
+
+  ![image](https://github.com/iooo25/pbo-post-test-2/assets/128172248/4212e8f2-5ed1-45b3-b10f-07803b6c9977)
   <li>Class celana</li>
+
+  ![image](https://github.com/iooo25/pbo-post-test-2/assets/128172248/1dd4d720-593d-4beb-ac51-b5140a22766b)
 </ol>
 
 <h2>B. Penjelasan Source Code</h2>
 
 <ol>
   <li>Class Main</li>
-  <li>Class Restoran</li>
+  <ol>
+    <li>Package dan Imports:</li>
+    <li>Kelas Utama (Main):</li>
+    <li>Variabel dan Objek Statis:</li>
+    <li>Menu dan Switch Statement:</li>
+    <li>Method nambahData(String choice):</li>
+    <li>Method menampilkanDataPakaian():</li>
+    <li>Method mengubahDataPakaian(String choice):</li>
+    <li>Method mengapusDataPakaian():</li>
+    <li>Penanganan Eksepsi:</li>
+    <li>Penjelasan Umum:</li>
+    <li>Keluar dari Program:</li>
+  </ol>
+  <li>Class Pakaian</li>
+  <li>Class baju</li>
+  <li>Class celana</li>
 </ol>
 
 <h2>C. Penjelasan Output</h2>
